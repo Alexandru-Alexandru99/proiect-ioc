@@ -1,0 +1,74 @@
+.footer-container {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+.footer-container .background {
+    position: absolute;
+    height: 150%;
+    width: 100%;
+    background: linear-gradient(90deg, #8b2505, #f39454);
+    transform: skewY(-5deg);
+}
+
+.footer-container .background-2 {
+    position: absolute;
+    left: 0;
+    top: 150%;
+    width: 100%;
+    height: 120%;
+    background: linear-gradient(90deg, #8b2505, #f39454);
+}
+
+.footer-container .content {
+    position: relative;
+}
+
+.footer-container .content .marsfooter {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    background: url("../../img/mars1.png");
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+  
+  /* Social Icons */
+.social-icon-link {
+
+    color: black;
+    font-size: 34px;
+}
+  
+.social-icons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    margin-left: 1500px;
+    padding-top: 200px;
+}
+
+@media screen and (max-width: 960px) {
+    .footer-container .content .marsfooter {
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+    .social-icons {
+        margin-left: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container .content .marsfooter {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .social-icons {
+        margin-top: 20px;
+        margin-left: 120px;
+    }
+}

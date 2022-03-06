@@ -1,0 +1,152 @@
+section.features {
+    padding-top: 500px;
+    padding-bottom: 250px;
+    text-align: center;
+    overflow: hidden;
+}
+
+section.features .info.right {
+    justify-content: flex-end;
+}
+
+section.features .info.right .illustration {
+    right: auto;
+    left: 25%;
+}
+
+@keyframes levitation {
+    0% {
+        transform: translateX(10px) translateY(-10px) translateZ(0px);
+    }
+    100% {
+        transform: translateX(-10px) translateY(10px) translateZ(0px);
+    }
+}
+
+section.features .info.right .illustration.computer .elementCenter {
+    background-image: url("../../img/astronaut3.png");
+    top: 25px;
+    left: -35px;
+    width: 128px;
+    height: 128px;
+    margin-top: -60px;
+    margin-left: -60px;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: levitation;
+}
+
+section.features .info .illustration {
+    position: absolute;
+    top: 150%;
+    right: 25%;
+    width: 10px;
+    height: 10px;
+}
+
+section.features .info .illustration .system .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 999px;
+    border: 1px solid #030305;
+}
+
+
+@keyframes features-disc-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate( 1turn);
+    }
+}
+
+
+section.features .info .illustration .system .circle.index-1 {
+    width: 330px;
+    height: 330px;
+    margin-top: -165px;
+    margin-left: -165px;
+}
+
+section.features .info .illustration .system .circle.index-2 {
+    width: 430px;
+    height: 430px;
+    margin-top: -215px;
+    margin-left: -215px;
+}
+
+section.features .info .illustration .system .circle.index-3 {
+    width: 530px;
+    height: 530px;
+    margin-top: -265px;
+    margin-left: -265px;
+}
+
+section.features .info .illustration .system .disc.index-1 .inner {
+    top: -165px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    background: #ca7128;
+}
+
+section.features .info .illustration .system .disc.index-2 .inner {
+    top: -215px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    background: #f32641;
+}
+
+section.features .info .illustration .system .disc.index-3 .inner {
+    top: -265px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    background: #4c044e;
+}
+
+section.features .info .illustration .system .disc .inner {
+    position: absolute;
+    top: 0;
+    border-radius: 999px;
+    background: #32528e;
+}
+
+section.features .info .illustration .system .disc.index-1 {
+    animation-duration: 15.1s;
+}
+
+section.features .info .illustration .system .disc.index-2 {
+    animation-duration: 25.1s;
+}
+
+section.features .info .illustration .system .disc.index-3 {
+    animation-duration: 40.1s;
+}
+
+section.features .info .illustration .system .disc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: features-disc-rotation;
+}
+
+

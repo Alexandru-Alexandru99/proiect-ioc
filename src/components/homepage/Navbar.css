@@ -1,0 +1,124 @@
+.navbar {
+  /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
+  /* background: transparent; */
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background: url("../../img/cosmonaut.png");
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: auto;
+}
+
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  margin-top: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 90vw;
+  justify-content: end;
+  margin-right: 0rem;
+}
+
+.nav-item {
+  height: 70px;
+}
+
+.nav-links {
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+
+.nav-links:hover {
+  border-bottom:0px;
+  color: rgba(0, 0, 0, 0.699);
+  transition: all 0.2s ease-out;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+
+  .nav-menu {
+    display: block;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #242424;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: left;
+    padding: 2rem;
+    padding-left: 0rem;
+    width: 100%;
+    display: table;
+    color: white;
+  }
+
+  .nav-links:hover {
+    background-color: #242424;
+    color: white;
+    border-radius: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+}

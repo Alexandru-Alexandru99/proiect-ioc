@@ -1,0 +1,302 @@
+.d-body {
+    background-color: #ebedef;
+    min-height: 100vh;
+}
+
+.d-new {
+    background-color: #ebedef;
+    min-height: 100vh;
+    margin-left: 0px;
+}
+
+.d-header {
+    background: #fff;
+    border-bottom: 1px solid #d8dbe0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    min-height: 61px;
+}
+
+.d-content {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 30px;
+}
+
+.d-h1 {
+    margin-left: 0px;
+    padding-bottom: 10px;
+}
+
+.buttonDelete {
+    background: url("../../img/delete.png");
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+    border: none;
+}
+
+#btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 35px;
+}
+
+.recommended1 {
+    background: url("../../img/marsLimited.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.recommended2 {
+    background: url("../../img/saturnLimited.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.recommended3 {
+    background: url("../../img/moonLimited.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.recommended4 {
+    background: url("../../img/uranusLimited.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.bundle1 {
+    background: url("../../img/bundle1.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.bundle2 {
+    background: url("../../img/bundle2.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.bundle3 {
+    background: url("../../img/bundle3.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.bundle4 {
+    background: url("../../img/bundle4.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.limited {
+    background: url("../../img/limited.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+    animation: rotation 2s infinite linear;
+}
+
+.mars-pack {
+    background: url("../../img/marsPack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.jupiter-pack {
+    background: url("../../img/jupiterPack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.pluto-pack {
+    background: url("../../img/plutoPack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.neptune-pack {
+    background: url("../../img/neptunePack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.uranus-pack {
+    background: url("../../img/uranusPack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.saturn-pack {
+    background: url("../../img/saturnPack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.moon-pack {
+    background: url("../../img/moonPack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.education-pack {
+    background: url("../../img/mortarboardPack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.car-pack {
+    background: url("../../img/carPack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.medicine-pack {
+    background: url("../../img/caduceusPack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.agriculture-pack {
+    background: url("../../img/plantingPack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.tesla-pack {
+    background: url("../../img/teslaPack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.structure-pack {
+    background: url("../../img/structurePack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.spacex-pack {
+    background: url("../../img/aircraftPack.png");
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+}
+
+.currency {
+    position: absolute;
+    background: url("../../img/alien-head.png");
+    width: 32px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height: 32px;
+}
+
+.price {
+    margin-left: 50px;
+}
+
+.d-content .shopTable {
+    padding-bottom: 20px;
+}
+
+.card-text {
+    color: rgb(233, 152, 47);
+}
+
+.ofer {
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .d-body  {
+        margin-left: 200px;
+    }
+    .d-content .card:hover {
+        margin-top: -10px;
+        margin-bottom: -10px;
+        /* margin-left: -10px;
+        margin-right: -10px; */
+        transition: 0.5s;
+    }
+    .d-content .shopTable:hover {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        /* margin-left: -10px;
+        margin-right: -10px; */
+        transition: none;
+    }
+    
+    .d-content .shopTable .card:hover {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        /* margin-left: -10px;
+        margin-right: -10px; */
+        transition: none;
+    }
+    .d-content .shopCost:hover {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        /* margin-left: -10px;
+        margin-right: -10px; */
+        transition: none;
+    }
+}

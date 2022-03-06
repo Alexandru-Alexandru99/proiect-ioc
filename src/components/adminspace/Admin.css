@@ -1,0 +1,101 @@
+.u-body {
+    background-color: #ebedef;
+    min-height: 100vh;
+}
+
+.u-new {
+    background-color: #ebedef;
+    min-height: 100vh;
+    margin-left: 0px;
+}
+
+.u-header {
+    background: #fff;
+    border-bottom: 1px solid #d8dbe0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    min-height: 61px;
+}
+
+.u-table {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 40px;
+}
+
+label #btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 35px;
+}
+
+.user-icon {
+    position: absolute;
+    background: url("../../img/user-icon.png");
+    width: 32px;
+    height: 32px;
+    margin-left: -50px;
+}
+
+.admin-title-chart {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.usersAstronaut {
+    position: absolute;
+    background: url("../../img/user.png");
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.remainings1 {
+    background: url("../../img/architect.png");
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.remainings2 {
+    background: url("../../img/home.png");
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.remainings3 {
+    background: url("../../img/stock-market.png");
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.remainings4 {
+    background: url("../../img/coins.png");
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.title-users {
+    margin-left: 30px;
+}
+
+@media (min-width: 768px) {
+    .u-body  {
+        margin-left: 200px;
+    }
+}
+
+

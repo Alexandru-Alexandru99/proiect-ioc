@@ -1,0 +1,146 @@
+.a-body {
+    background-color: #ebedef;
+    min-height: 100vh;
+}
+
+.a-new {
+    background-color: #ebedef;
+    min-height: 100vh;
+    margin-left: 0px;
+}
+
+.a-header {
+    background: #fff;
+    border-bottom: 1px solid #d8dbe0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    min-height: 61px;
+}
+
+.a-content {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 40px;
+}
+
+.username {
+    position: absolute;
+    right: 15px;
+    top: 14px;
+}
+
+
+label #btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 35px;
+}
+
+.planet1 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/marsColor.png");
+}
+
+.planet2 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/uranus.png");
+}
+
+.planet3 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/moon-phase.png");
+}
+
+.planet4 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/saturn.png");
+}
+
+.planet5 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/jupiter.png");
+}
+
+.planet6 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/neptune.png");
+}
+
+.planet7 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/pluto.png");
+}
+
+.stock1 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/car.png");
+}
+
+.stock2 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/caduceus.png");
+}
+
+.stock3 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/mortarboard.png");
+}
+
+.stock4 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/structure.png");
+}
+
+.stock5 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/tesla.png");
+}
+
+.stock6 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/aircraft.png");
+}
+
+.stock7 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/planting.png");
+}
+
+@media (min-width: 768px) {
+    .a-body  {
+        margin-left: 200px;
+    }
+}

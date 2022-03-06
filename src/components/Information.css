@@ -1,0 +1,35 @@
+.information1 {
+    background: url("../img/architect.png");
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.information2 {
+    background: url("../img/home.png");
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.information3 {
+    background: url("../img/stock-market.png");
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.information4 {
+    background: url("../img/coins.png");
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.i-text {
+    color: black;
+}
