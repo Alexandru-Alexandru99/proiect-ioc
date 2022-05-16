@@ -124,7 +124,7 @@ export default function Signup() {
                 <Form.Label>Last Name</Form.Label>
                 <Form.Control type="text" ref={lastNameRef} onChange={handleNameChange} onEmptied={handleEmpty} required />
               </Form.Group>
-              <Form.Group id="lastName">
+              <Form.Group id="username">
                 <Form.Label>Username</Form.Label>
                 <Form.Control type="text" ref={usernameRef} onChange={handleUsernameChange} onEmptied={handleEmpty} required />
               </Form.Group>

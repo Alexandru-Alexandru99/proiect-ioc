@@ -121,15 +121,15 @@ export default function Profile() {
                         />
                         </Form.Group>
                         <Form.Group id="firstname">
-                        <Form.Label>Firstname</Form.Label>
+                        <Form.Label>Firs Nname</Form.Label>
                         <Form.Control
-                            type="text" defaultValue={info.firstname} ref={firstnameRef}
+                            type="text" defaultValue={info.firstname} ref={firstnameRef} readonly="readonly"
                         />
                         </Form.Group>
                         <Form.Group id="lastname">
-                        <Form.Label>Lastname</Form.Label>
+                        <Form.Label>Last Name</Form.Label>
                         <Form.Control
-                            type="text" defaultValue={info.lastname} ref={lastnameRef}
+                            type="text" defaultValue={info.lastname} ref={lastnameRef} readonly="readonly"
                         />
                         </Form.Group>
                         <Form.Group id="phonenumber">
