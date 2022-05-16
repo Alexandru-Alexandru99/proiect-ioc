@@ -177,7 +177,7 @@ export default function Profile() {
                         <Form.Group id="ssn">
                         <Form.Label>Social Security Number</Form.Label>
                         <Form.Control
-                            type="text" 
+                            type="password" 
                             // defaultValue={info.address} ref={addressRef} 
                             readonly="readonly"
                         />
