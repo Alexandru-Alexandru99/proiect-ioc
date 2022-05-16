@@ -49,32 +49,44 @@ export default function Profile() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setError("Passwords do not match")
-    }
+    // if (passwordRef.current.value !== passwordConfirmRef.current.value) {
+    //   return setError("Passwords do not match")
+    // }
 
-    const user = {
-      username: window.localStorage.getItem('name'),
-      firstname: firstnameRef.current.value,
-      lastname: lastnameRef.current.value,
-      phonenumber: phonenumberRef.current.value,
-      address: addressRef.current.value,
-      password: passwordRef.current.value,
-    }
+    // const user = {
+    //   username: window.localStorage.getItem('name'),
+    //   firstname: firstnameRef.current.value,
+    //   lastname: lastnameRef.current.value,
+    //   phonenumber: phonenumberRef.current.value,
+    //   address: addressRef.current.value,
+    //   password: passwordRef.current.value,
+    // }
 
-    try {
-      setError("")
-      setLoading(true)
+    // try {
+    //   setError("")
+    //   setLoading(true)
   
-      axios
-        .post("http://localhost:5000/users/updateProfile", user)
-        .then(window.location.reload());
-    } catch {
-      setError("Failed to update profile!")
-    }
+    //   axios
+    //     .post("http://localhost:5000/users/updateProfile", user)
+    //     .then(window.location.reload());
+    // } catch {
+    //   setError("Failed to update profile!")
+    // }
 
-    setLoading(false)
+    // setLoading(false)
     
+  }
+
+  function handleSSNSubmit(e) {
+    e.preventDefault()
+  }
+
+  function handleAddressSubmit(e) {
+    e.preventDefault()
+  }
+
+  function handlePasswordSubmit(e) {
+    e.preventDefault()
   }
 
   let menu;
@@ -110,41 +122,67 @@ export default function Profile() {
                 <Card>
                     <Card.Body>
                     <span class="userAstronaut"></span>
-                    <h2 className="text-center mb-4">Personal info</h2>
+                    <h2 className="text-center mb-4">Personal Info</h2>
                     {error && <Alert variant="danger">{error}</Alert>}
                     <br></br>
                     <Form onSubmit={handleSubmit}>
-                        <Form.Group id="email">
-                        <Form.Label>Email</Form.Label>
-                        <Form.Control
-                            type="email" value={window.localStorage.getItem('name')} readonly="readonly"
-                        />
-                        </Form.Group>
                         <Form.Group id="firstname">
-                        <Form.Label>Firs Nname</Form.Label>
+                        <Form.Label>First Nname</Form.Label>
                         <Form.Control
-                            type="text" defaultValue={info.firstname} ref={firstnameRef} readonly="readonly"
+                            type="text" 
+                            // defaultValue={info.firstname} ref={firstnameRef} 
+                            readonly="readonly"
                         />
                         </Form.Group>
                         <Form.Group id="lastname">
                         <Form.Label>Last Name</Form.Label>
                         <Form.Control
-                            type="text" defaultValue={info.lastname} ref={lastnameRef} readonly="readonly"
+                            type="text" 
+                            // defaultValue={info.lastname} ref={lastnameRef} 
+                            readonly="readonly"
                         />
+                        </Form.Group>
+                        <Form.Group id="username">
+                        <Form.Label>Username</Form.Label>
+                        <Form.Control
+                            type="text" 
+                            // value={window.localStorage.getItem('name')} 
+                            readonly="readonly"
+                        /> <br></br>
+                        <Form.Group id="email">
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control
+                            type="email" 
+                            // value={window.localStorage.getItem('name')} 
+                            readonly="readonly"
+                        />
+                        </Form.Group>
                         </Form.Group>
                         <Form.Group id="phonenumber">
                         <Form.Label>Phone number</Form.Label>
                         <Form.Control
-                            type="text" defaultValue={info.phonenumber} ref={phonenumberRef}
+                            type="tel" 
+                            // defaultValue={info.phonenumber} ref={phonenumberRef} 
+                            readonly="readonly"
                         />
                         </Form.Group>
                         <Form.Group id="address">
                         <Form.Label>Address</Form.Label>
                         <Form.Control
-                            type="text" defaultValue={info.address} ref={addressRef}
+                            type="text" 
+                            // defaultValue={info.address} ref={addressRef}
+                            readonly="readonly"
                         />
                         </Form.Group>
-                        <Form.Group id="password">
+                        <Form.Group id="ssn">
+                        <Form.Label>Social Security Number</Form.Label>
+                        <Form.Control
+                            type="text" 
+                            // defaultValue={info.address} ref={addressRef} 
+                            readonly="readonly"
+                        />
+                        </Form.Group>
+                        {/* <Form.Group id="password">
                         <Form.Label>Password</Form.Label>
                         <Form.Control
                             type="password"
@@ -158,6 +196,115 @@ export default function Profile() {
                             type="password"
                             ref={passwordConfirmRef}
                             placeholder="Leave blank to keep the same"
+                        />
+                        </Form.Group> */}
+                        {/* <Button disabled={loading} type="submit">
+                        Update
+                        </Button> */}
+                    </Form>
+                    </Card.Body>
+                </Card>
+
+                <br></br>
+
+                <Card>
+                    <Card.Body>
+                    <h2 className="text-center mb-4">Social Security Number</h2>
+                    {error && <Alert variant="danger">{error}</Alert>}
+                    <br></br>
+                    <h6 className="text-center mb-4">To start using our platform you are required to register your Social Security Number</h6>
+                    <Form onSubmit={handleSSNSubmit}>
+                        <Form.Group id="ssn">
+                        <Form.Label>Social Security Number</Form.Label>
+                        <Form.Control
+                            type="text" 
+                            // defaultValue={info.address} ref={addressRef}
+                        />
+                        </Form.Group>
+                        <Form.Group id="password">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control
+                            type="password"
+                            // ref={passwordRef}
+                        />
+                        </Form.Group>
+                        <Form.Group id="password-confirm">
+                        <Form.Label>Password Confirmation</Form.Label>
+                        <Form.Control
+                            type="password"
+                            // ref={passwordConfirmRef}
+                        />
+                        </Form.Group>
+                        <Button disabled={loading} type="submit">
+                        Register
+                        </Button>
+                    </Form>
+                    </Card.Body>
+                </Card>
+
+                <br></br>
+
+                <Card>
+                    <Card.Body>
+                    <h2 className="text-center mb-4">Change Address</h2>
+                    {error && <Alert variant="danger">{error}</Alert>}
+                    <br></br>
+                    <Form onSubmit={handleAddressSubmit}>
+                        <Form.Group id="address">
+                        <Form.Label>Address</Form.Label>
+                        <Form.Control
+                            type="text" 
+                            // defaultValue={info.address} ref={addressRef}
+                        />
+                        </Form.Group>
+                        <Form.Group id="password">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control
+                            type="password"
+                            // ref={passwordRef}
+                        />
+                        </Form.Group>
+                        <Form.Group id="password-confirm">
+                        <Form.Label>Password Confirmation</Form.Label>
+                        <Form.Control
+                            type="password"
+                            // ref={passwordConfirmRef}
+                        />
+                        </Form.Group>
+                        <Button disabled={loading} type="submit">
+                        Update
+                        </Button>
+                    </Form>
+                    </Card.Body>
+                </Card>
+
+                <br></br>
+
+                <Card>
+                    <Card.Body>
+                    <h2 className="text-center mb-4">Change Password</h2>
+                    {error && <Alert variant="danger">{error}</Alert>}
+                    <br></br>
+                    <Form onSubmit={handlePasswordSubmit}>
+                        <Form.Group id="password">
+                        <Form.Label>Old Password</Form.Label>
+                        <Form.Control
+                            type="password"
+                            // ref={passwordRef}
+                        />
+                        </Form.Group>
+                        <Form.Group id="password">
+                        <Form.Label>New Password</Form.Label>
+                        <Form.Control
+                            type="password"
+                            // ref={passwordRef}
+                        />
+                        </Form.Group>
+                        <Form.Group id="password-confirm">
+                        <Form.Label>Password Confirmation</Form.Label>
+                        <Form.Control
+                            type="password"
+                            // ref={passwordConfirmRef}
                         />
                         </Form.Group>
                         <Button disabled={loading} type="submit">
