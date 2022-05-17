@@ -26,7 +26,7 @@ export default function LeftMenu({type}) {
                     <ul class="list-unstyled components">
                         <p>COMPONENTS</p>
                         <li class="active">
-                            <Link to="/dashboard"> <i class="fa fa-fw fa-home"></i> Dashboard</Link>
+                            <Link to="/dashboard"> <i class="fa fa-fw fa-home"></i> Market</Link>
                         </li>
                         <li>
                             <Link to="/profile"> <i class="fa fa-fw fa-user"></i> Profile</Link>

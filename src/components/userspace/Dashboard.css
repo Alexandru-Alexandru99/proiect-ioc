@@ -250,6 +250,24 @@
     height: 32px;
 }
 
+.currency1 {
+    position: absolute;
+    background: url("../../img/alien1.png");
+    width: 32px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height: 32px;
+}
+
+.currency2 {
+    position: absolute;
+    background: url("../../img/alien.png");
+    width: 32px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height: 32px;
+}
+
 .price {
     margin-left: 50px;
 }
