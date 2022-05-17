@@ -107,6 +107,17 @@ export default function Signup() {
     }
   }
 
+  function handlePassword(e) {
+    if(e.target.value.length < 8 || e.target.value.length > 20) {
+      setError("Password should be between 8 and 20 characters!")
+    } else if (e.target.value.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/) == null) {
+      setError("Password should contain at least one lowercase letter, one uppercase letter, one number and one special character!")
+    }
+    else {
+      setError("");
+    }
+  }
+
   return (
     <>
       <Link to='/' className='linkLogo'>
@@ -138,11 +149,11 @@ export default function Signup() {
               </Form.Group>
               <Form.Group id="password">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" ref={passwordRef} onEmptied={handleEmpty} required />
+                <Form.Control type="password" ref={passwordRef} onChange={handlePassword} onEmptied={handleEmpty} required />
               </Form.Group>
               <Form.Group id="password-confirm">
                 <Form.Label>Password Confirmation</Form.Label>
-                <Form.Control type="password" ref={passwordConfirmRef} onEmptied={handleEmpty} required />
+                <Form.Control type="password" ref={passwordConfirmRef} onChange={handlePassword} onEmptied={handleEmpty} required />
               </Form.Group>
               <Button disabled={loading} className="w-100" type="submit">
                 Sign Up

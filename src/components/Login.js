@@ -31,6 +31,29 @@ export default function Login() {
     setLoading(false)
   }
 
+  function handleEmailChange(e) {
+    if(e.target.value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/) == null) {
+      setError("Email is not valid!");
+    } else {
+      setError("");
+    }
+  }
+
+  function handlePassword(e) {
+    if(e.target.value.length < 8 || e.target.value.length > 20) {
+      setError("Password should be between 8 and 20 characters!")
+    } else if (e.target.value.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/) == null) {
+      setError("Password should contain at least one lowercase letter, one uppercase letter, one number and one special character!")
+    }
+    else {
+      setError("");
+    }
+  }
+
+  function handleEmpty(e) {
+    setError("");
+  }
+
   return (
     <>
       <Link to='/' className='linkLogo'>
@@ -42,11 +65,11 @@ export default function Login() {
         <Form onSubmit={handleSubmit}>
           <Form.Group id="email">
             <Form.Label>Email</Form.Label>
-            <Form.Control type="email" ref={emailRef} required />
+            <Form.Control type="email" ref={emailRef} onChange={handleEmailChange} onEmptied={handleEmpty} required />
           </Form.Group>
           <Form.Group id="password">
             <Form.Label>Password</Form.Label>
-            <Form.Control type="password" ref={passwordRef} required />
+            <Form.Control type="password" ref={passwordRef} onChange={handlePassword} onEmptied={handleEmpty} required />
           </Form.Group>
           <Button disabled={loading} className="w-100" type="submit">
             Log in
