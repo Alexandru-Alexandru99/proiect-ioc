@@ -127,10 +127,11 @@ export default function Profile() {
                     <br></br>
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="firstname">
-                        <Form.Label>First Nname</Form.Label>
+                        <Form.Label>First Name</Form.Label>
                         <Form.Control
                             type="text" 
                             // defaultValue={info.firstname} ref={firstnameRef} 
+                            defaultValue="Alexandru"
                             readonly="readonly"
                         />
                         </Form.Group>
@@ -139,6 +140,7 @@ export default function Profile() {
                         <Form.Control
                             type="text" 
                             // defaultValue={info.lastname} ref={lastnameRef} 
+                            defaultValue="Alexandru"
                             readonly="readonly"
                         />
                         </Form.Group>
@@ -148,12 +150,14 @@ export default function Profile() {
                             type="text" 
                             // value={window.localStorage.getItem('name')} 
                             readonly="readonly"
+                            defaultValue="alex.alex"
                         /> <br></br>
                         <Form.Group id="email">
                         <Form.Label>Email</Form.Label>
                         <Form.Control
                             type="email" 
                             // value={window.localStorage.getItem('name')} 
+                            defaultValue="alexandru1999@gmail.com"
                             readonly="readonly"
                         />
                         </Form.Group>
@@ -164,6 +168,7 @@ export default function Profile() {
                             type="tel" 
                             // defaultValue={info.phonenumber} ref={phonenumberRef} 
                             readonly="readonly"
+                            defaultValue="+4722222222"
                         />
                         </Form.Group>
                         <Form.Group id="address">
@@ -171,6 +176,7 @@ export default function Profile() {
                         <Form.Control
                             type="text" 
                             // defaultValue={info.address} ref={addressRef}
+                            defaultValue="Str. Spatarul Preda, Nr. 16, Bucharest"
                             readonly="readonly"
                         />
                         </Form.Group>
@@ -179,6 +185,7 @@ export default function Profile() {
                         <Form.Control
                             type="password" 
                             // defaultValue={info.address} ref={addressRef} 
+                            defaultValue="password"
                             readonly="readonly"
                         />
                         </Form.Group>
