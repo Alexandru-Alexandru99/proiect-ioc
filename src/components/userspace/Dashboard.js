@@ -722,6 +722,35 @@ export default function Dashboard() {
         }
     }
 
+    const series2 = [{
+        name: 'Lands',
+        data: [31, 40, 28, 51, 42, 109, 100]
+    }, {
+        name: 'Houses',
+        data: [11, 32, 45, 32, 34, 52, 41]
+    }];
+    const options2 = {
+        chart: {
+            height: 350,
+            type: 'area'
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth'
+        },
+        xaxis: {
+            type: 'datetime',
+            categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+        },
+        tooltip: {
+            x: {
+                format: 'dd/MM/yy HH:mm'
+            },
+        },
+    };
+
     const series1 = [{
         name: 'Price growth',
         data: [2.3, 3.1, 4.0, 10.1, 4.0, 3.6, 3.2, 2.3, 1.4, 0.8, 0.5, 0.2]
@@ -2021,7 +2050,7 @@ export default function Dashboard() {
                                     <CardDeck responsive>
                                         <Card>
                                             <Card.Header as="h5">Lands and houses price</Card.Header>
-                                            <Chart options={options} series={series} type="candlestick" height={350} />
+                                            <Chart options={options2} series={series2} type="area" height={350} />
                                         </Card>
                                     </CardDeck>
                                     <br></br>
@@ -2155,7 +2184,7 @@ export default function Dashboard() {
                                     <CardDeck responsive>
                                         <Card>
                                             <Card.Header as="h5">Lands and houses price</Card.Header>
-                                            <Chart options={options} series={series} type="candlestick" height={350} />
+                                            <Chart options={options2} series={series2} type="area" height={350} />
                                         </Card>
                                     </CardDeck>
                                     <br></br>
@@ -2289,7 +2318,7 @@ export default function Dashboard() {
                                     <CardDeck responsive>
                                         <Card>
                                             <Card.Header as="h5">Lands and houses price</Card.Header>
-                                            <Chart options={options} series={series} type="candlestick" height={350} />
+                                            <Chart options={options2} series={series2} type="area" height={350} />
                                         </Card>
                                     </CardDeck>
                                     <br></br>
@@ -2423,7 +2452,7 @@ export default function Dashboard() {
                                     <CardDeck responsive>
                                         <Card>
                                             <Card.Header as="h5">Lands and houses price</Card.Header>
-                                            <Chart options={options} series={series} type="candlestick" height={350} />
+                                            <Chart options={options2} series={series2} type="area" height={350} />
                                         </Card>
                                     </CardDeck>
                                     <br></br>
@@ -2557,7 +2586,7 @@ export default function Dashboard() {
                                     <CardDeck responsive>
                                         <Card>
                                             <Card.Header as="h5">Lands and houses price</Card.Header>
-                                            <Chart options={options} series={series} type="candlestick" height={350} />
+                                            <Chart options={options2} series={series2} type="area" height={350} />
                                         </Card>
                                     </CardDeck>
                                     <br></br>
@@ -2691,7 +2720,7 @@ export default function Dashboard() {
                                     <CardDeck responsive>
                                         <Card>
                                             <Card.Header as="h5">Lands and houses price</Card.Header>
-                                            <Chart options={options} series={series} type="candlestick" height={350} />
+                                            <Chart options={options2} series={series2} type="area" height={350} />
                                         </Card>
                                     </CardDeck>
                                     <br></br>
@@ -2825,7 +2854,7 @@ export default function Dashboard() {
                                     <CardDeck responsive>
                                         <Card>
                                             <Card.Header as="h5">Lands and houses price</Card.Header>
-                                            <Chart options={options} series={series} type="candlestick" height={350} />
+                                            <Chart options={options2} series={series2} type="area" height={350} />
                                         </Card>
                                     </CardDeck>
                                     <br></br>
